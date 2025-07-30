@@ -695,3 +695,138 @@ button {
   font-size: 16px;
   font-weight: 500;
 }
+
+/* Staff trang */
+.staff {
+  padding: 130px 0;
+}
+
+.staff__desc,
+.staff__heading {
+  text-align: center;
+}
+
+.staff__heading {
+  color: #000958;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.875rem;
+}
+
+.staff__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+  margin-top: 45px;
+}
+
+.staff-item {
+  text-align: center;
+}
+
+.staff-item__img-wrap {
+  position: relative;
+  margin: 0 16px;
+  border-radius: 130px;
+
+  margin-bottom: 6px;
+}
+
+.staff-item__img {
+  position: relative;
+  display: block;
+  border-radius: 130px;
+}
+
+/* chỉnh background */
+.staff-item__img-wrap::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 266px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item__title {
+  margin-top: 45px;
+  color: #656689;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.staff-item__name {
+  color: #000958;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 14px;
+}
+
+.staff__cta-wrap {
+  text-align: center;
+}
+
+.staff__cta {
+  margin-top: 48px;
+  width: 193px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+  opacity: 0.6;
+  box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+  color: #ff5b2e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* decor */
+.staff-item__img-wrap::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.staff-item__img-wrap::b {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* thay đổi màu bằng ::before */
+.staff-item:nth-child(2) .staff-item__img-wrap::before {
+  background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::before {
+  background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::before {
+  background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+/* thêm cái item vào  */
+.staff-item:nth-child(1) .staff-item__img-wrap::after {
+  content: url(../img/staff-decor-01.svg);
+}
+
+.staff-item:nth-child(2) .staff-item__img-wrap::after {
+  content: url(../img/staff-decor-02.svg);
+}
+
+.staff-item:nth-child(3) .staff-item__img-wrap::after {
+  content: url(../img/staff-decor-03.svg);
+}
+
+.staff-item:nth-child(4) .staff-item__img-wrap::after {
+  content: url(../img/staff-decor-04.svg);
+}
+
+/* thay đổi chiều của decor bằng chẵn  even  */
+.staff-item:nth-child(even) .staff-item__img-wrap::after {
+  bottom: auto;
+  top: 25px;
+}
