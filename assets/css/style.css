@@ -419,6 +419,7 @@ button {
   width: 494px;
   margin-left: auto;
 }
+
 .about__img-wrap::after {
   left: 0;
   right: 0;
@@ -575,4 +576,122 @@ button {
 
 .tab__content-item--active {
   display: block;
+}
+/* servicer trang 5==================== */
+.service {
+  margin-top: 130px;
+  padding: 68px 0 100px 0;
+  background: #fff6ed;
+}
+.service__top {
+  text-align: center;
+}
+
+.service__heading {
+  margin: 15px 0 0 0;
+}
+
+/* bottom */
+.service__cart {
+  position: relative;
+
+  width: 294px;
+  height: 208px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+
+  background: #fff;
+  padding: 30px 22px 30px 28px;
+}
+
+.service__cart-margin {
+  margin: 24px 0;
+}
+
+.service__cart-heading {
+  margin-left: 12px;
+  color: #000958;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.service__cart-heading::before {
+  content: "";
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 22px;
+  background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+  border-radius: 99px;
+}
+
+.service__cart-desc {
+  color: #656689;
+  padding: 18px 0 24px 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.service__cart-link {
+  display: flex;
+  align-items: center;
+  color: #34396a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.service__cart-icon {
+  margin-left: 6px;
+}
+
+.service__body {
+  display: grid;
+  margin-top: 71px;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 71px;
+}
+
+.service__column-inner {
+  display: flex;
+  position: relative;
+}
+
+.service__column-inner::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 410px;
+  height: 350px;
+  left: 12px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #79d5e0;
+}
+
+.service__column-inner__img {
+  z-index: 1;
+}
+
+.service__column-cta {
+  margin-top: 60px;
+  display: flex;
+}
+
+.column__cta {
+  margin: 0 auto;
+  width: 214px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+
+  opacity: 0.6;
+  box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+  color: #ff5b2e;
+  font-size: 16px;
+  font-weight: 500;
 }
