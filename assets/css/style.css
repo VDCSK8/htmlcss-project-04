@@ -830,3 +830,182 @@ button {
   bottom: auto;
   top: 25px;
 }
+/* ====================trang 7 price */
+.price {
+  background: #fff6ed;
+  padding: 86px 0;
+}
+.price__top {
+  width: 709px;
+  text-align: center;
+  margin: 0 auto;
+}
+.price__heading {
+  color: #000958;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62px;
+}
+
+.price__desc {
+  color: #656689;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 24px 0 38px 0;
+}
+
+.price__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 56px;
+  gap: 44px;
+}
+
+.price__item {
+  padding: 30px;
+  width: 302px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.price__item-link {
+  color: #ff5b2e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.price__item-desc {
+  color: #3f4065;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 8px 0 25px 0;
+}
+
+.price__item-heading {
+  color: #000958;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 22px;
+}
+
+.price__btn {
+  width: 246px;
+  height: 44px;
+  border-radius: 39px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  color: #ff5b2e;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+  transition: 0.25s;
+}
+
+.price__btn:hover {
+  width: 246px;
+  height: 44px;
+  border-radius: 39px;
+  background: #ff5b2e;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+
+  opacity: 0.9;
+}
+
+.price__item-inner {
+  color: #656689;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.price__item-inner_name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price__item-inner_name:nth-child(2) {
+  margin: 18px 0;
+}
+.price__item-inner_name:nth-child(4) {
+  margin: 18px 0;
+}
+.price__item-inner_name:nth-child(6) {
+  margin: 18px 0;
+}
+/* sline */
+.price__switch-wrap {
+  margin-left: 192px;
+}
+
+.price__switch-label {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  width: 276px;
+  height: 56px;
+  border: 1px solid #f15d34;
+  border-radius: 99px;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.price__switch-label::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  border-radius: inherit;
+  background: #ff5b2e;
+  left: 0;
+  top: 0;
+}
+
+.price__switch-value {
+  color: #fff;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.price__switch-input:checked + .price__switch-label::before {
+  left: auto;
+  right: 0;
+  width: 131px;
+}
+
+.price__switch-input:not(:checked)
+  + .price__switch-label
+  .price__switch-value:nth-child(2),
+.price__switch-input:checked
+  + .price__switch-label
+  .price__switch-value:nth-child(1) {
+  color: var(--primary-color);
+}
+
+.price__switch-inner {
+  position: relative;
+}
+.price__decor {
+  position: absolute;
+  top: -29px;
+  right: 124px;
+}
