@@ -1064,7 +1064,6 @@ button {
   border-radius: inherit;
   background: #ffda54;
   height: 354px;
-  left: 0;
   bottom: 0;
 }
 
@@ -1145,4 +1144,110 @@ button {
 
 .review__content {
   overflow: hidden;
+}
+
+/*  <!---------------------- TRANG 09 BLOG ----------------------> */
+.blog {
+  margin: 80px 0 131px 0;
+}
+
+.blog__top {
+  display: flex;
+}
+
+.blog__action {
+  margin-left: 512px;
+}
+
+.blog__heading {
+  display: flex;
+  align-items: center;
+}
+
+.blog__desc {
+  width: 350px;
+  margin-bottom: 24px;
+}
+
+.blog__btn {
+  width: 182px;
+  height: 56px;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+  opacity: 0.6;
+  color: #ff5b2e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* blog__bottom */
+.blog__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 48px;
+  margin-top: 116px;
+}
+
+.blog-item {
+  width: 358px;
+  height: 546px;
+}
+
+.blog-item__wrap {
+  position: relative;
+}
+
+.blog-item__wrap::after {
+  position: absolute;
+  content: "";
+  width: 358px;
+  height: 362px;
+  border-radius: 24px;
+  background: #90ccff;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.blog-item:nth-child(2) .blog-item__wrap::after {
+  background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__wrap::after {
+  background: #5bd6e2;
+}
+
+.blog-item__img {
+  display: block;
+  margin-left: 36px;
+}
+
+.blog-item__time {
+  position: absolute;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  left: 36px;
+  top: -38px;
+}
+
+.blog-item__heading {
+  margin-top: 28px;
+  width: 338px;
+  color: #000958;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.blog-item__desc {
+  margin-top: 16px;
+  width: 351px;
+  color: #656689;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
