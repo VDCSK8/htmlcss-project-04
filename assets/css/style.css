@@ -1009,3 +1009,140 @@ button {
   top: -29px;
   right: 124px;
 }
+
+/* trang 8 */
+.reviews {
+  padding: 104px 0 52px;
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.review__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 54px;
+  height: 54px;
+  border: 2px solid #efb8a8;
+  border-radius: 50%;
+  color: #ff5b2e;
+  background: transparent;
+}
+
+.review__control:hover {
+  color: #fff;
+  background: #ff5b2e;
+  transition: 0.25s;
+  border-color: #ff5b2e;
+  cursor: pointer;
+}
+.review__item {
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+  flex-shrink: 0;
+  width: 100%;
+}
+.review__item-media {
+  position: relative;
+  flex-shrink: 0;
+  gap: 44px;
+  border-radius: 137px;
+}
+.review__item-media::after {
+  position: absolute;
+  content: "";
+  width: 274px;
+  height: 427px;
+  left: 0;
+  border-radius: inherit;
+  background: #ffda54;
+  height: 354px;
+  left: 0;
+  bottom: 0;
+}
+
+.review__item-img {
+  position: relative;
+  border-radius: 137px;
+  z-index: 1;
+  display: block;
+}
+
+.review__heading {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.review__desc {
+  width: 553px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 34px;
+}
+
+.review__item-name {
+  position: relative;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-left: 28px;
+}
+.review__item-name::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  left: -28px;
+  bottom: 11px;
+  border-radius: 99px;
+}
+.review__dots {
+  display: flex;
+  margin-top: 56px;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.review__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  border: 1px solid #ff5b2e;
+}
+.review__dot:hover {
+  background: #ff5b2e;
+  cursor: pointer;
+}
+.review__dot--active {
+  width: 24px;
+  height: 8px;
+  background: #ff5b2e;
+  border: 1px solid #ff5b2e;
+}
+
+.review__item-content {
+  margin-top: 80px;
+}
+
+.review__control:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.review__list {
+  display: flex;
+}
+
+.review__content {
+  overflow: hidden;
+}
